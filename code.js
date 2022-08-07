@@ -9,7 +9,7 @@ var Arr_1 = [
   {
     // opening game question- page 1
     divName: ["r1p1"],
-    functions: [`switch_class($("#back-button"), "visible", "hidden")`, `pop_buttons($("#next-button"), 1)`, "pop_watch_room_button()", "pop_home_page_button()", "pop_restart_button()", "pop_quiz_button()", "pop_attach()", "pop_home_button()"],
+    functions: [`switch_class($("#back-button"), "visible", "hidden")`, `pop_buttons($("#next-button"), 1)`, "pop_watch_room_button()", "pop_home_page_button()", "pop_restart_button()", "pop_quiz_button()", "pop_home_button()"],
     type: "content",
     topic: 1
   },
@@ -18,22 +18,14 @@ var Arr_1 = [
     divName: ["r1p2"],
     functions: [`switch_class($("#back-button"), "hidden", "visible")`, `pop_buttons($("#back-button"), -1)`],
     type: "content",
-    topic: 2,
-    attach : [
-      ["heart_bg", "heart1_happy"],
-      ["heart1_sad"],
-      ["heart1_sad", "heart_bg"],
-      ["heart_bg", "heart1_happy"],
-      ["heart_bg", "heart1_happy"],
-      ["heart_bg", "heart1_happy"]
-    ]
+    topic: 2
   },
   {
     // first game- page 3
     divName: ["r1p3"],
     functions: ["pop_timeEnds()", "pop_click()", "pop_hover_down()"],
     type: "game",
-    timer: "10s",
+    timer: "15s",
     feedback: {
       correct: "array",
       incorrect: "array"
@@ -166,7 +158,7 @@ var Arr_2 = [
     divName: ["r2p2"],
     functions: ["pop_r2p2_slider()", `enter("slider")`],
     type: "game",
-    timer: "10s",
+    timer: "15s",
     feedback: {
       correct: "array",
       incorrect: "array"
@@ -255,7 +247,7 @@ var Arr_2 = [
     divName: ["r2p11"],
     functions: ["pop_click()"],
     type: "game",
-    timer: "5s",
+    timer: "7s",
     feedback: {
       correct: "array",
       incorrect: "array"
@@ -315,7 +307,7 @@ var Arr_2 = [
     divName: ["r2p17"],
     functions: ["pop_click()"],
     type: "game",
-    timer: "7s",
+    timer: "10s",
     feedback: {
       correct: "שלב בוס!",
       incorrect: "שלב בוס!"
@@ -384,7 +376,7 @@ var Arr_3 = [
     divName: ["r3p2"],
     functions: [`pop_click()`],
     type: "game",
-    timer: "7s",
+    timer: "10s",
     feedback: {
       correct: "array",
       incorrect: "array"
@@ -450,7 +442,7 @@ var Arr_3 = [
     divName: ["r3p9"],
     functions: [`pop_r3p9_input()`],
     type: "game",
-    timer: "10s",
+    timer: "25s",
     feedback: {
       correct: "array",
       incorrect: "array"
@@ -555,7 +547,7 @@ var Arr_4 = [
     divName: ["r4p2"],
     functions: [`pop_click()`],
     type: "game",
-    timer: "5s",
+    timer: "7s",
     feedback: {
       correct: "array",
       incorrect: "array"
@@ -643,7 +635,7 @@ var Arr_4 = [
     divName: ["r4p11"],
     functions: ["pop_click()", "pop_hover_down()"],
     type: "game",
-    timer: "10s",
+    timer: "15s",
     feedback: {
       correct: "array",
       incorrect: "array"
@@ -703,7 +695,7 @@ var Arr_4 = [
     divName: ["r4p17"],
     functions: ["pop_drag_drop()"],
     type: "game",
-    timer: "7s",
+    timer: "12s",
     feedback: {
       correct: "שני ארונות",
       incorrect: "array"
@@ -726,7 +718,7 @@ var Arr_4 = [
     divName: ["r4p19"],
     functions: ["pop_r4p19_slider()", `enter("slider")`, "r4p19_slider_move()"],
     type: "game",
-    timer: "7s",
+    timer: "15s",
     feedback: {
       correct: "array",
       incorrect: "array"
@@ -1000,43 +992,19 @@ toggle_room = ()  => {
   }
 }
 
-// when clicking on attach sign
-pop_attach = ()  => {
-  $(".attach").on("click", function() {
-    // darken page
-    $("#black-div").css("display", "block");
-    if (!$(this).hasClass("visited")) {
-      $(this).addClass("visited");
-    }
-    // display files
-    for (let j = 0; j < matrix[nRoom][nPage].attach[$(this).attr("class").split(/\s+/)[2].slice(-1) - 1].length; j++) {
-      $("#scroll-div").append(`<img class="attach-file" src="assets/media/files/${matrix[nRoom][nPage].divName[0]}/${matrix[nRoom][nPage].attach[$(this).attr("class").split(/\s+/)[2].slice(-1) - 1][j]}.svg">`);
-    }
-
-    if ($(`#${matrix[nRoom][nPage].divName} .attach.visited`).length === matrix[nRoom][nPage].attach.length) {
-      switch_class($("#next-button"), "hidden", "visible");
-    }
-  });
-
-  $("#scroll-back-button").on("click", function() {
-     $("#black-div").css("display", "none");
-     $("#scroll-div").html("");
-  });
-}
-
 // setting content page
 type_content = () => {
   // display controls
   switch_class($("#controls"), "none", "flex");
   switch_class($(`#lesson-map-${nRoom}`), "none", "flex");
   
-  if (matrix[nRoom][nPage].attach !== undefined) {
-    // if the user havent visited the room yet
-    // the next button is blocked until whole the attached buttons are clicked
-    if ($(`#${matrix[nRoom][nPage].divName} .attach.visited`).length !== matrix[nRoom][nPage].attach.length) {
-      switch_class($("#next-button"), "visible", "hidden");
-    }
-  } else if (matrix[nRoom][nPage] !== matrix[nRoom][matrix[nRoom].length - 1]) {
+  // if (matrix[nRoom][nPage].attach !== undefined) {
+  //   // if the user havent visited the room yet
+  //   // the next button is blocked until whole the attached buttons are clicked
+  //   if ($(`#${matrix[nRoom][nPage].divName} .attach.visited`).length !== matrix[nRoom][nPage].attach.length) {
+  //     switch_class($("#next-button"), "visible", "hidden");
+  //   }
+  if (matrix[nRoom][nPage] !== matrix[nRoom][matrix[nRoom].length - 1]) {
      switch_class($("#next-button"), "hidden", "visible");
   }
 }

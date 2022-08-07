@@ -426,11 +426,6 @@ body, #main {
   position: absolute;
 }
 
-.attach-file {
-  width: 25vw;
-  height: 50vh;
-}
-
 /* game */
 #spinning-bg {
   z-index: 2;
@@ -839,27 +834,6 @@ body, #main {
   margin-top: 0.4vw;
 }
 
-.attach {
-  width: 2.055vw;
-  height: 2.06vw;
-  margin-top: 0.25vw;
-  margin-left: 2vw;
-  background-image: url("assets/media/2content/attach_normal.svg");
-  cursor: pointer;
-}
-
-.attach:hover {
-  background-image: url("assets/media/2content/attach_hover.svg");
-}
-
-.attach:active{
-  background-image: url("assets/media/2content/attach_down.svg");
-}
-
-.attach.visited {
-  background-image: url("assets/media/2content/attach_visited.svg");
-}
-
 .flex-text {
   flex-wrap: nowrap;
   margin: auto;
@@ -1150,7 +1124,7 @@ body, #main {
 
 .question-counter, .quiz-type {
   font-size: 2.5rem;
-  height: 2.5vw;
+  /* height: 2.5vw; */
   position: relative;
   text-align: center;
 }
@@ -1158,13 +1132,15 @@ body, #main {
 .question-counter {
   right: 5vw;
   width: 5.8vw;
-  bottom: -8.5vw;
+  bottom: 8vw;
+  position: absolute;
 }
 
 .quiz-type {
-  top: 5.3vw;
-  width: 14vw;
-  right: 82vw;
+  bottom: 8vw;
+  width: 16vw;
+  left: 6vw;
+  position: absolute;
 }
 
 .text-heart {
