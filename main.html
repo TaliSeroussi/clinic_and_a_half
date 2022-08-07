@@ -1,0 +1,1959 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/media/2content/head_happy.svg">
+    <link rel="stylesheet" href="assets/JQuery/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="assets/JQuery/jquery-3.4.1.min.js"></script>
+    <script src="assets/JQuery/jquery-ui.min.js"></script>
+    <script src="code.js"></script>
+    <script src="games_general.js"></script>
+    <script src="quiz.js"></script> 
+    <script src="room_1_games.js"></script>
+    <script src="room_2_games.js"></script> 
+    <script src="room_3_games.js"></script>
+    <script src="room_4_games.js"></script>     
+    <title>מרפאה וחצי</title>
+  </head>
+  <body>
+    <div id="main">
+      <!-- opening -->
+      <div id="opening" class="page background">
+        <div class="container">
+          <div id="symbols" class="flex">
+            <div id="about-button" class="button move background">אודות</div>
+            <img id="till" class="symbol" src="assets/media/1home/till_logo.svg">
+            <img id="bhd-10" class="symbol" src="assets/media/1home/bhd_10_logo.svg">
+          </div>
+          <div id="grade-print" class="bold smooth-16 ending-game-title"></div>
+          <div id="rooms" class="flex">
+            <div id="room-button-1" class="flex button room-button background abled">
+              <div class="room-name smooth-16">חדר קבלה</div>
+            </div>
+            <div id="room-button-2" class="flex button room-button background enabled">
+              <div class="room-name smooth-16">חדר טיפולים</div>
+            </div>
+            <div id="room-button-3" class="flex button room-button background enabled">
+              <div class="room-name smooth-16">חדר רופא</div>
+            </div>
+            <div id="room-button-4" class="flex button room-button background enabled">
+              <div class="room-name smooth-16">חדר תרופות</div>
+            </div>
+          </div>
+          <span id="opening-text" class="flex">
+            <div class="bold">ברוכים הבאים ל-</div>
+            <img id="opening-title" src="assets/media/1home/title_mirpaa_vahezi.svg">
+            <div>אחמי הוא אחראי מרפאה די מפוזר... בבקשה היכנסו איתו לכל החדרים לפי הסדר ועזרו לו לארגן אותם!</div>
+            <img id="asterix" src="assets/media/1home/note_bubble.svg">
+          </span>
+          <img id="ahami" src="assets/media/1home/ahami.svg">
+        </div>
+      </div>
+
+      <!-- about -->
+      <div id="about" class="page background notebook">
+        <div class="container">
+          <div class="background bold title little-title">אודות</div>
+          <div id="back-about-button" class="button move back-button control-button background"></div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span><span class="bold gray">רמ"ד טי"ל-</span> רס"ן מיגל לויתן</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span><span class="bold gray">רת"ח מו"פ וחדשנות בלמידה-</span> סמ"ר במיל' גל גנסין וסמ"ר אופק בצון</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span><span class="bold gray">עיצוב גרפי-</span> סמל מייה ליבנה</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span><span class="bold gray">תכנות-</span> סמל טל סרוסי ורב"ט ניצן סלמון</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span><span class="bold gray">מומחה תוכן-</span> רס"ב יוסף פורטל</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span><span class="bold gray">גרסה-</span> אפריל 2022</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- room 1 -->
+      <!-- page 1 -->
+      <div id="r1p1" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">תחזוקת החדר</div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>חדר ההמתנה יהיה מוגן מפני פגעי מזג האוויר.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>בחדר ההמתנה יימצאו הוראות, הנחיות, ומידע הסברתי למטופל, בהתאם להוראות קרפר.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>בחדר יהיו ספסלי המתנה עם משענת בהתאם לתקן היחידה.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>בחדר יפוזרו פחי אשפה לצורך שמירה על סביבה נקייה.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 2 -->
+      <div id="r1p2" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">שילוט החדר</div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span class="span-container"><span class="bold gray">מחוץ לכניסה</span> למרפאה ייתלו שלטים במקום בולט- לא על הדלת. השלטים שייתלו הם:
+            <div class="flex flex-text">
+              <div class="attach background data-num-1"></div>
+              <span>שעות פעילות המרפאה.</span>
+            </div>
+            <div class="flex flex-text">
+              <div class="attach background data-num-2"></div>
+              <span>נוהל קבלת חולים למרפאה.</span>
+            </div>
+            <div class="flex flex-text">
+              <div class="attach background data-num-3"></div>
+              <span>דרכי תקשורת השגת צוות הרפואי לאחר שעות הפעילות ובמקרה חירום.</span>
+            </div>
+            <div class="flex flex-text">
+              <div class="attach background data-num-4"></div>
+              <span>המענה הרפואי לחיילי צה"ל לאחר שעות הפעילות (נוהל ביקור רופא).</span>
+            </div>
+          </span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span class="span-container"><span class="bold gray">במרכז החדר</span> ייתלו:
+            <div class="flex flex-text">
+              <div class="attach background data-num-4"></div>
+              <span>שלט של שמירה על השקט והניקיון, ואיסור על עישון.</span>
+            </div>
+            <div class="flex flex-text">
+              <div class="attach background data-num-5"></div>
+              <span>אמנת השירות של חיל הרפואה.</span>
+            </div>
+          </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 3- page 2's game -->
+      <div id="r1p3" class="page background">
+        <div class="container">
+          <div class="instructions-flex flex">
+            <img class="ahami-head" src="assets/media/2content/head_happy.svg">
+            <div class="bold instructions">התבלבלתי ותליתי את כל השלטים מחוץ למרפאה!<br>לחצו על השלטים שאמורים להיות בפנים</div>
+          </div>
+          <div class="items-flex flex">
+            <img class="data-num-1 incorrect item state button visible" src="assets/media/exer1/exer1_emergency.svg">
+            <img class="data-num-2 incorrect item state button visible" src="assets/media/exer1/exer1_kabala.svg">
+            <img class="data-num-3 correct item state button visible" src="assets/media/exer1/exer1_smoke.svg">
+            <img class="data-num-4 correct item state button visible" src="assets/media/exer1/exer1_amana.svg">
+            <img class="data-num-5 incorrect item state button visible" src="assets/media/exer1/exer1_timetable.svg">
+            <img class="data-num-6 incorrect item state button visible" src="assets/media/exer1/exer1_bikurofe.svg">
+          </div>
+        </div>
+      </div>
+
+      <!-- page 4 -->
+      <div id="r1p4" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">מידע למטופל</div>
+          <div class="flex flex-text">בחדר ההמתנה יימצא מידע למטופלים, בחלוקה לפי נושאים:</div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-1"></div>
+            <span class="span-container">הנחיות רפואה <span class="bold gray">כלליות</span>:
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>שעות פעילות המרפאה והמענה הרפואי לאחריהן ובעת חופשה.</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>נוהל קבלה לטיפול של בעל תפקיד (סגל/חניכים) לכל מתחם טיפולי.</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>נוהל פנייה למיון/מרפאת ביקור רופא ואופן בקשת טופס 119 (הוראת קרפ"ר 281.119).</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>רשימת מרפאות שיניים לעזרה ראשונה (אתר צה"ל ואפליקציית מקול הלב).</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>נוהל פנייה לוועדה רפואית (הוראת קרפ"ר 701.005).</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>זכויות וחובות החייל בכל הקשור בהפניות למומחים (הוראת קרפ"ר 300.007).</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>נוהל פנייה ישירה של אנשי הקבע למרפאות מומחים (הוראת קרפ"ר 300.007).</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>נוהל מערך הרפואה הראשונה למשרתי הקבע, הכוללות את רשימת מרפאות הקבע בצבא ואפשרות אנשי הקבע למעבר ביניהן (הוראת קרפ"ר 300.002).</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>דרכי התקשרות עם מרכז המידע וזימון תורים (אתר צה"ל ואפליקציית מקול הלב).</span>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 5 -->
+      <div id="r1p5" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">מידע למטופל</div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-1"></div>
+            <span class="span-container">רפואת <span class="bold gray">מומחים</span>:
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>נוהל פניית/הפניית חייל בחובה/בקבע לקב"ן.</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>רשימת מרפאות מומחים צבאיות ואזרחיות, ורשימת אופטיקאים (כולל דרכי השגתן).</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>מומחי פיזיותרפיה ודרכי השגתם (אתר צה"ל, אפליקציית מקול הלב ואתר משר"פ דך הצה"לנט).</span>
+              </div>
+            </span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-2"></div>
+            <span class="span-container">רפואת <span class="bold gray">נשים</span>:
+            <div class="flex flex-text">
+              <img class="asterix" src="assets/media/1home/asterisk.svg">
+              <span>נוהל בדיקת חיילת, הכולל רשימת רופאות נשים צבאיות ואזרחיות, ונוהל פנייה למרכז מהו"ת (ראש מערך רפואת נשים במרפ"א 8282).</span>
+            </div>
+          </span>
+        </div>
+        </div>
+      </div>
+
+      <!-- page 6 -->
+      <div id="r1p6" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">מידע למטופל</div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-1"></div>
+            <span class="span-container">לוח מודעות עם <span class="bold gray">הנחיות רפואה מונעת ובריאות הצבא</span>. אין לתלות הוראות קרפ"ר על הלוח- הנהלים שיימצאו הינם נהלים פנים יחידתיים המותאמים להוראות קרפ"ר ולהבנחיות הענפים השונים בחיל הרפואה. הלוח יעסוק בנושאים הבאים:
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>מניעת עישון.</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>נזקי שמש.</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>תזונה נכונה בשגרה ולפי עונות השנה.</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>פעילות גופנית ואורח חיים בריא.</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>מודעות לאבחון סרטן השד ונקודות חן.</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>מידע בנושא אמצעי מניעה, ופרסום מרפאות לבדיקת HIV</span>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 7- page 4, 5 and 6's game -->
+      <div id="r1p7" class="page background">
+        <div class="container">
+          <div class="boards-flex flex">
+            <img class="board drop drop-1 empty" src="assets/media/exer2/board_general.svg">
+            <img class="board drop drop-2 empty" src="assets/media/exer2/board_pro.svg">
+            <img class="board drop drop-3 empty" src="assets/media/exer2/board_women.svg">
+            <img class="board drop drop-4 empty" src="assets/media/exer2/board_health.svg">
+          </div>
+          <img class="hands" src="assets/media/exer2/exer2_hands.svg">
+          <img class="data-num-1 drag-1 drag item state button block" src="assets/media/exer2/message_vaada.svg">
+          <img class="data-num-2 drag-1 drag item state button none" src="assets/media/exer2/message_timetable.svg">
+          <img class="data-num-3 drag-2 drag item state button none" src="assets/media/exer2/message_kaban.svg">
+          <img class="data-num-4 drag-2 drag item state button none" src="assets/media/exer2/message_physiotherapy.svg">
+          <img class="data-num-5 drag-3 drag item state button none" src="assets/media/exer2/message_women.svg">
+          <img class="data-num-6 drag-3 drag item state button none" src="assets/media/exer2/message_mahut.svg">
+          <img class="data-num-7 drag-4 drag item state button none" src="assets/media/exer2/message_food.svg">
+          <img class="data-num-8 drag-4 drag item state button none" src="assets/media/exer2/message_sport.svg">
+          <div class="instructions-flex flex">
+            <img class="ahami-head" src="assets/media/2content/head_happy.svg">
+            <div class="bold instructions">בבקשה עזרו לי לגרור את המודעה ללוח הנכון</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 8 -->
+      <div id="r1p8" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">חדר קבלה</div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>קבלת מטופלים למרפאה תתבצע בהתאם לנוהל העבודה שנכתב על ידי מפקד המרפאה. נוהל העבודה יהיה תואם לפק"ל שגרת המחנה ביחידה.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>בחדר יימצאו מחשב, טלפון וציוד משקי לוגיסטי.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>הצוות הרפואי יכיר את מערכת זימון התורים וידע לקבוע תורים עבור חיילי היחידה למרפאות המומחים (רלוונטי למרפאות המנהלות זימון תורים).</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>בחדר הקבלה תבוצע הקפדה יתרה על שמירת סודיות רפואית- בין אם בשיח עם המטופל או בין אם בנעילה והצנעה של מסמכים רפואיים (כמתחייב בחוק "זכויות החולה"- סודיות רפואית).</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 9 -->
+      <div id="r1p9" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">אוגדן חדר הקבלה</div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span class="span-container">במרפאות בהן יש חדר קבלה צריך להכין <span class="bold gray">אוגדן הנחיות</span> שיכיל את הנושאים הבאים:
+            <div class="flex flex-text">
+              <div class="attach background data-num-1"></div>
+              <span>נהלי עבודה על פי פק"ל המרפאה.</span>
+            </div>
+            <div class="flex flex-text">
+              <div class="attach background data-num-2"></div>
+              <span>רשימת תכולה של הציוד הנמצא בחדר הקבלה.</span>
+            </div>
+            <div class="flex flex-text">
+              <div class="attach background data-num-3"></div>
+              <span>הוראות ב"מ (ביטחון מידע) בשימוש במחשבי צה"ל.</span>
+            </div>
+            <div class="flex flex-text">
+              <div class="attach background data-num-4"></div>
+              <span>נוהל כתוב על יחסי גומלין בין היחידה למרפאה בקביעת התור.</span>
+            </div>
+          </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 10- page 8 and 9's game -->
+      <div id="r1p10" class="page background">
+        <div class="container">
+          <div class="instructions-flex flex">
+            <img class="ahami-head" src="assets/media/2content/head_happy.svg">
+            <div class="bold instructions">עזרו לי ליצור אוגדן לחדר קבלה! גררו את הדפים הנחוצים לאוגדן ואת השאר לפח</div>
+          </div>
+          <div class="flex ogdan-drag-flex">
+            <img class="folder drop drop-1" src="assets/media/exer3/ogdan_kabala.svg">
+            <img class="trash drop drop-2" src="assets/media/exer3/exer3_trash.svg">
+          </div>
+          <img class="file item drag drag-1 data-num-1 button block" src="assets/media/exer3/exer3_work.svg">
+          <img class="file item drag drag-2 data-num-2 button block" src="assets/media/exer3/exer3_bikurofe.svg">
+          <img class="file item drag drag-1 data-num-3 button block" src="assets/media/exer3/exer3_equipment.svg">
+          <img class="file item drag drag-1 data-num-4 button block" src="assets/media/exer3/exer3_bam.svg">
+          <img class="file item drag drag-1 data-num-5 button block" src="assets/media/exer3/exer3_queue.svg">
+          <img class="file item drag drag-2 data-num-6 button block" src="assets/media/exer3/exer3_kabala.svg">
+        </div>
+      </div>
+
+      <!-- room 2 -->
+      <!-- page 1 -->
+      <div id="r2p1" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">הרגלי עבודה</div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>בחדר זה מתקיים המפגש הראשון בין המטופל למטפל.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>בחדר זה יעשו טיפולים על ידי איש צוות רפואה בלבד- ביוזמתו או על פי הוראות קר"פ, בהתאם להוראות קרפ"ר 200.001- סמכויות החובש.</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-1"></div>
+            <span>על כלל אנשי הצוות המטפל ללבוש חלוק לבן ומגוהץ עם תג זיהוי המציין את שמו, תמונתו ותפקידו (הוראת קר"פר 300.001).</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>כאשר חדר הטיפולים משותף למרפאת החובה והקבע יש לקבוע שעות קבלה נפרדות (הוראת קרפ"ר 300.002).</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-2"></div>
+            <span>לעיתים קיימות כמה עמדות טיפול בחדר אחד, ולכן יש לוודא שנשמרת הפרטיות של כל מטופל (הוראת קרפ"ר 300.001), ואף לבצע הפרדה פיזית בין מתחמי הטיפול באמצעות קיר הפרדה או וילון.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>במידה שבחדר ישנו מתחם נטילת דגימות מעבדה, אין לשלב את פעילות המתחם בו זמנית עם קבלת מטופלים בחדר הטיפולים, על מנת לשמור על פרטיות המטופל.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 2- page 1's game -->
+      <div id="r2p2" class="page background">
+        <div class="container">
+          <div class="instructions-flex flex">
+            <img class="ahami-head" src="assets/media/2content/head_happy.svg">
+            <div class="bold instructions">גדי חייל בסדיר, תור (למקרה לא דחוף) הוא רוצה להסדיר.<br>גררו את הסמן כדי לבחור את הזמן, והקישו על ENTER כדי שהתור יוזמן.</div>
+          </div>
+          <div id="gadi-text" class="bold">שיבוץ שעה לתור של גדי:</div>
+          <div class="slider-deitem background flex">
+            <div class="slider"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 3 -->
+      <div id="r2p3" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">תחזוקת החדר</div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>על המתחם להיות בעל אמצעים תקינים למיזוג/חימום.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span class="span-container">בחדר יהיו <span class="bold gray">4</span> פחים שונים:
+            <div class="flex flex-text">
+              <img class="asterix" src="assets/media/1home/asterisk.svg">
+              <span>פח לפסולת רפואית ביולוגית (הוראת קרפ"ר 603.007.4).</span>
+            </div>
+            <div class="flex flex-text">
+              <img class="asterix" src="assets/media/1home/asterisk.svg">
+              <span>פח ייעודי לפסולת רפואית חדה (פח מחטים).</span>
+            </div>
+            <div class="flex flex-text">
+              <img class="asterix" src="assets/media/1home/asterisk.svg">
+              <span>פח לפסולת רגילה (שאינה רפואית).</span>
+            </div>
+            <div class="flex flex-text">
+              <img class="asterix" src="assets/media/1home/asterisk.svg">
+              <span>פח גריסה.</span>
+            </div>
+          </span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>בצמוד לכל מכשיר רפואי הנמצא בחדר הטיפולים ימצאו הוראות הפעלה.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>צוות המטפלים יכיר את המכשור ואת הוראות ההפעלה של כל מכשיר (הוראות קרפ"ר 901.029).</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>בחדר יימצא אוגדן חדר טיפולים.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 4 -->
+      <div id="r2p4" class="page background">
+        <div class="container">
+          <div class="instructions-flex flex">
+            <img class="ahami-head" src="assets/media/2content/head_happy.svg">
+            <div class="bold instructions">שלטו באמצעות החצים במקלדת<br>לאיזה פח הפסולת אמורה לרדת</div>
+          </div>
+          <img class="item data-num-1 block" src="assets/media/exer5/fall_apple.svg">
+          <img class="item data-num-2 none" src="assets/media/exer5/fall_file.svg">
+          <img class="item data-num-3 none" src="assets/media/exer5/fall_syringe.svg">
+          <img class="item data-num-4 none" src="assets/media/exer5/fall_pad.svg">
+        </div>
+      </div>
+
+      <!-- page 5 -->
+      <div id="r2p5" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">אוגדן חדר טיפולים</div>
+          <div class="flex flex-text">אוגדן הוא קלסר שמכיל קובץ הוראות עבור הצוות הרפואי המטפל. עובדי המרפאה יכירו את ההוראות המתוייקות באוגדן, ואחראי המרפאה יחתים את העובדים על הצהרה על קריאת האוגדן אחת לחצי שנה. האוגדן יכלול את הנושאים הבאים:</div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-1"></div>
+            <span class="span-container">הוראות כלליות לאופן העבודה בהתאם לקביעת מנהל המרפאה:
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>פתיחת יום וסגירתו.</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>שעות הפעילות.</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>אופן התנהלות העובדים בחדר (כולל הופעה ולבוש).</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>הוראות לעובדים ותורנים בחדר מעבר לשעות הפעילות.</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>הנחיות לרישום ודיווח רפואי.</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>הנחיות לעבודה עם המערכת הרפואית הממוחשבת לחובש/אחות/פרמדיק/פיזיותרפיסט/סייעת/רופא שיניים (בהתאמה למתחם הרפואי).</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>הוראות קרפ"ר רלוונטיות (לדוגמה: סמכויות החובש, פסולת ביולוגית וכו').</span>
+              </div>
+            </span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-2"></div>
+            <span>נוהל מהילת <span class="bold gray">תמיסת סביעור</span>.</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-3"></div>
+            <span>נוהל <span class="bold gray">חשיפה לדם</span> (הוראת ענף רפואה 01-02-05).</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 6 -->
+      <div id="r2p6" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">רשימות חשובות</div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-1"></div>
+            <span>את המשימות של תורן במרפאה יש לרכז בדף תורנות.</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-2"></div>
+            <span>בחדר תימצא רשימת תכולה- בחלוקה לציוד משקי, משקי רפואי ומחשוב.</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-3"></div>
+            <span>בחדר הטיפולים יימצאו דפי רישום הזנה בדיעבד מפגש חובש (רטרו) למקרה בו המערכת קרסה.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 7 -->
+      <div id="r2p7" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">שילוט בחדר</div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-1"></div>
+            <span>בכניסה לחדר ייתלה שלט המורה על אפשרות לליווי המטופל/ת בעת הפגישה עם המטפל (הוראת קרפ"ר 300.001).</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-2"></div>
+            <span>שלט המצביע על מיקום אפוד הכוננות בחדר.</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-3"></div>
+            <span>בחזית שולחן הטיפולים ייתלה שלט המפרט את מורשי הגישה לשולחן:<br>"הגישה לשולחן הטיפולים מותרת לרופא, חובש/ת, פרמדיק, אח".</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 8- page 7's game -->
+      <div id="r2p8" class="page background">
+        <div class="container">
+          <div class="instructions-flex flex">
+            <img class="ahami-head" src="assets/media/2content/head_happy.svg">
+            <div class="bold instructions">בבקשה עזרו לי לגרור את השלט למקום הנכון</div>
+          </div>
+          <div class="drop drop-1"></div>
+          <div class="drop drop-2"></div>
+          <div class="drop drop-3"></div>
+          <img class="side-hands" src="assets/media/exer6/exer06_hand.svg">
+          <img class="data-num-1 drag-1 drag item state button block" src="assets/media/exer6/exer06_livui.svg">
+          <img class="data-num-2 drag-2 drag item state button none" src="assets/media/exer6/exer06_efod.svg">
+          <img class="data-num-3 drag-3 drag item state button none" src="assets/media/exer6/exer06_tipulim.svg">
+        </div>
+      </div>
+
+      <!-- page 9 -->
+      <div id="r2p9" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">אפוד כוננות</div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-1"></div>
+            <span>ביחידות המחזיקות כוננות לסיוע רפואי בשגרה, ניתן לקבוע אפוד/ווסט מחלקתי שישמש את כונן הרפואה בשגרה. ניתן גם לאפשר לכל כונן להחזיק בכוננות זו באמצעות ציודו הייעודי האישי.</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-2"></div>
+            <span>בתוך האפוד/ווסט יש לוודא הימצאות רשימת תכולה המעודכנת לתקן ולמצאי הנלקחת ממערכת ה-sap (דו"ח תכולת ערכה קוד ZPKR).</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>יש לבצע מעקב אחר כשירות ותוקף הצר"פ והציוד הנוסף באפוד/ווסט לפי הנחיית הו"ק 200.008. בדיקת הכשירות תבוצע בכל כניסה למשמרת על ידי הכונן. מעקב אחר תקפות הציוד וכשירותו הטכנית יבוצע במעקבים הפנימיים של למשך 3 חודשים. ניתן לרשום את תוקף הפריטים על גבי רשימת התכולה של הערכה.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 10 -->
+      <div id="r2p10" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">אחזקת דפיברילטור</div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-1"></div>
+            <span>יש לבצע בדיקה יומית של דפיברילטורים חצי אוטומטיים מסוגים phillips ו-AED, ולתעד זאת על גבי טבלת מעקב שתוחזק בצמוד למכשיר.</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-2"></div>
+            <span>במסגרת הבדיקה יש לוודא כי נורית החיווי מהבהבת בירוק, על ידי התבוננות בלבד.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 11- page 10's game -->
+      <div id="r2p11" class="page background">
+        <div class="container">
+          <div class="instructions-flex flex">
+            <img class="ahami-head" src="assets/media/2content/head_happy.svg">
+            <div class="bold instructions">לחצו על נורית החיווי כדי להפעיל אותה!</div>
+          </div>
+          <img class="defibrillator" src="assets/media/exer7/exer07_defibrillator.svg">
+          <img class="correct item button" src="assets/media/exer7/exer07_light_off.svg ">
+        </div>
+      </div>
+
+      <!-- page 12- page 10's game -->
+      <div id="r2p12" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">עמדת נטילת דגימות מעבדה</div>
+          <div class="flex flex-text">בעמדה זו יימצאו:</div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-1"></div>
+            <span>צר"פ וציוד משקי בהתאם לתקני היחידה המופיעים באט"ל 2000 טבלאות 9 ו-10.</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-2"></div>
+            <span class="span-container">"אוגדן נהלי עבודה לנטילת דגימות מעבדה" עליו חתום כל הצוות הרפואי, ובו יכללו הנושאים הבאים:"
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>שעות הפעילות.</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>נהלי העבודה (הכוללים את אופן איסוף הדגימות, ריכוזן ושליחתן למעבדה המרכזית).</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>ממשקי העבודה וסדר הפעולות מול המעבדה המרכזית, הכוללים את נהלי מסירת הדגימות וקבלת התשובות, ואת אנשי הקשר במעבדה.</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>נוהל הטיפול בחשיפה לדם על פי הנחיית ענף הרפואה 05-02-01.</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>טבלה המרכזת את סוגי המבחנות הנדרשות לכל סוג של בדיקה.</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>סדר הפעולות הנדרש לאחר קבלת תשובת מעבדה חריגה, על פי הנחיית ענף הרפואה 08-01-01.</span>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 13- page 12's game -->
+      <div id="r2p13" class="page background">
+        <div class="container">
+          <div class="instructions-flex flex">
+            <img class="ahami-head" src="assets/media/2content/head_happy.svg">
+            <div class="bold instructions">עזרו לי ליצור אוגדן לעמדת המעבדה! גררו את הדפים הנחוצים לאוגדן ואת השאר לפח</div>
+          </div>
+          <div class="flex ogdan-drag-flex">
+            <img class="folder drop drop-1" src="assets/media/exer3/ogdan_maabada.svg">
+            <img class="trash drop drop-2" src="assets/media/exer3/exer3_trash.svg">
+          </div>
+          <img class="file item drag drag-1 data-num-1 button block" src="assets/media/exer3/exer8_timetable.svg">
+          <img class="file item drag drag-1 data-num-2 button block" src="assets/media/exer3/exer8_testtube.svg">
+          <img class="file item drag drag-2 data-num-3 button block" src="assets/media/exer3/exer3_bikurofe.svg">
+          <img class="file item drag drag-1 data-num-4 button block" src="assets/media/exer3/exer8_samples.svg">
+          <img class="file item drag drag-1 data-num-5 button block" src="assets/media/exer3/exer8_blood.svg">
+          <img class="file item drag drag-1 data-num-6 button block" src="assets/media/exer3/exer3_work.svg">
+        </div>
+      </div>
+
+      <!-- page 14 -->
+      <div id="r2p14" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">עגלת הטיפולים</div>
+          <img id="treatment-table" class="center" src="assets/media/2content/shulhan_tipulim.svg">
+        </div>
+      </div>
+
+      <!-- page 15 -->
+      <div id="r2p15" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">הנחיות לשולחן טיפולים</div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>שולחן הטיפולים יימצא נקי ומסודר במהלך יום העבודה- סידור שולחן הטיפולים יהיה בהתאם לסכימה. צר"פ יאורגן בהתאם להוראת ענף צר"פ "פינת אחסון וניפוק תרופות" מספר 02-04-0010.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>משולחן הטיפולים ינופקו תרופות בסמכות חובש בלבד על פי הוראת קרפ"ר 200.001- סמכויות החובש.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>תרופות הנמצאות בשולחן הטיפולים יהיו באריזתן המקורית, ואין לגזור תרופות מראש. כאשר מנופקת תרופה לחייל, החלק עם מספר האצווה ותאריך פגות התוקף נשאר בשולחן הטיפולים.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>בשולחן הטיפולים יימצאו תרופות בהתאם למנה קבועה שנקבעה במרפאה לפי אופי צריכה וכמות המטופלים היומית/שבועית.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>ביחידות בהן אין שימוש במדחום דיגיטלי עם כיסוי פלסטיק חד פעמי (פרובים), יוחזקו מדי החום בפעמוניות, כאשר בתחתית הפעמונית יונחו פדי גאזה. אחת ליום ימולאו הפעמוניות בתמיסת סביעור ביחס 1:100.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>בשולחן הטיפולים לא ימצאו חומרי רפואה מונעת כגון: טבליות כלור, אלתוש, תמיסות לבדיקת מים.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>כל הטיפולים אשר יוצאו משולחן הטיפולים ירשמו במערכת ה-cpr פרט למקרים בהם יש נתק בתקשורת, ואז הם יתועדו על גבי טפסי הזנה רטרו.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 16- page 15's game
+      <div id="r2p16" class="page background">
+        <div class="container">
+          <img class="data-num-1 correct item state button block" src="assets/media/exer9/exer09_therm.svg">
+          <img class="data-num-2 correct item state button none" src="assets/media/exer9/exer09_gauze.svg">
+          <img class="data-num-3 correct item state button none" src="assets/media/exer9/exer09_optalgin.svg">
+          <img class="data-num-4 incorrect item state button none" src="assets/media/exer9/exer09_dai.svg">
+          <img class="data-num-5 incorrect item state button none" src="assets/media/exer9/exer09_moxipen.svg">
+          <img class="data-num-6 incorrect item state button none" src="assets/media/exer9/exer09_ibufen.svg">
+          <div class="instructions-flex flex">
+            <img class="ahami-head" src="assets/media/2content/head_happy.svg">
+            <div class="bold instructions">תתפסו רק כאלה שאמורות להיות על שולחן הטיפולים!<br>אוי לא! נופלות תרופות!</div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- page 17 -->
+      <div id="r2p16" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">שילוט בשולחן טיפולים</div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-1"></div>
+            <span>מדי החום P.O ו-P.R יופרדו וישולטו בנייר דבק שקוף (לא בליקופלסט).</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-2"></div>
+            <span>בשלטים של תרופות הנמצאות בשולחן הטיפולים ייכתב שם התרופה בשפה האנגלית- שם גנרי ושם מסחרי בהתאם להנחיות ענף צר"פ 02-04-0110.</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-3"></div>
+            <span>מגירות השולחן ישולטו בהתאם לתכולה הנמצאת בהן.</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-4"></div>
+            <span>תרופות שקיבלו הארכת תוקף ממצר"פ בהתאם לחוברת רענון שנתית, יסומנו בתווית צהובה עם תאריך מעודכן.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 18- page 17's game -->
+      <div id="r2p17" class="page background">
+        <div class="container">
+          <div class="instructions-flex flex">
+            <img class="ahami-head" src="assets/media/2content/head_happy.svg">
+            <div class="bold instructions">איזו תרופה משולטת נכון?</div>
+          </div>
+          <div class="items-flex flex center">
+            <img class="data-num-1 correct item state button visible" src="assets/media/exer10/exer10_left.svg">
+            <img class="data-num-2 incorrect item state button visible" src="assets/media/exer10/exer10_mid.svg">
+            <img class="data-num-3 incorrect item state button visible" src="assets/media/exer10/exer10_right.svg">
+          </div>
+        </div>
+      </div>
+
+<!-- room 3 -->
+      <!-- page 1 -->
+      <div id="r3p1" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">הרגלי עבודה</div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>בדיקת המטופלים על ידי רופא תתבצע אך ורק בחדר הרופא. במקרים בהם יוחלט על ידי הרופא, יטופל המטופל גם בחדר הטיפולים. יש לשמור על פרטיות המטופלים ולמנוע כניסה לחדר רופא ללא אישור.</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-1"></div>
+            <span>לפני בדיקת החיילים בחדר הרופא, יש לוודא כי קיימים כל האמצעים הנדרשים לביצוע בדיקת חולים (טופסולוגיה, דפי צילום, טפסי רטרו וכדומה).</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>יש לוודא שלכל חיילת שמגיעה למרפאה יש ליווי - אלא אם החיילת וויתרה מראש על זכותה לליווי, ציינה זאת בפני הרופא טרם קיום המפגש והוא תיעד זאת במערכת הרשומות הרפואית.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>על הרופא לפרט לחייל את כל מהלך הטיפול שינתן לו בכדי לשפר את שביעות רצונו ושיתוף הפעולה של החייל עם הרופא.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>במרפאה לא יוחזקו חותמות אישיות - על כל רופא להחזיק את חותמתו בצמוד אליו ולדאוג לאבטחתה.</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- page 2- page 2's game -->
+      <div id="r3p2" class="page background">
+        <div class="container">
+          <div class="instructions-flex flex">
+            <img class="ahami-head" src="assets/media/2content/head_happy.svg">
+            <div class="bold instructions">הרופא שכח לקחת את החותמת הביתה... תוכלו למצוא אותה?</div>
+          </div>
+          <div class="stamp button item correct"></div>
+          
+        </div>
+      </div>
+
+      <!-- page 3 -->
+      <div id="r3p3" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">תחזוקת החדר</div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>בחדר חייבים להימצא כיור, סבון ונייר לשטיפת ידיים וניגובן.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>בחדר יהיו אמצעים תקינים למיזוג / חימום.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>בחדר רופא יימצא צר"פ משקי לצורך תפעולו של החדר בהתאם לתקני היחידה (ניתן להיעזר בנגד הלוגיסטיקה - אט"ל 2000).</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>בחדר יימצא אוגדן חדר רפואה.</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-1"></div>
+            <span>בחדר רופא תימצא עגלת טיפולים לרופא (על פי תקן).</span>
+          </div>
+        </div>
+      </div>
+
+       
+      <!-- page 4- page 4's game -->
+      <div id="r3p4" class="page background">
+        <div class="container">
+          <div class="instructions-flex flex">
+            <img class="ahami-head" src="assets/media/2content/head_happy.svg">
+            <div class="bold instructions">מצא את ההבדלים בין החדרים!</div>
+          </div>
+          <div class="items">
+            <img class="soap soap item correct transparent" src="assets/media/exer12/exer12_soap.svg"></img>
+            <img class="ac item correct transparent" src="assets/media/exer12/exer12_ac.svg"></img>
+            <img class="certain item correct transparent" src="assets/media/exer12/exer12_certain.svg"></img>
+            <img class="cupboard item correct transparent" src="assets/media/exer12/exer12_cupboard.svg"></img>
+            <div class="chair item correct transparent"></div>
+          </div>
+          <div class="targets">
+            <div class="soap target item correct"></div>
+            <div class="ac target item correct"></div>
+            <div class="certain target item correct"></div>
+            <div class="cupboard target item correct"></div>
+            <div class="chair target item correct"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 5 -->
+      <div id="r3p5" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">עגלת טיפולים</div>
+          <img id="doctor-table" class="center" src="assets/media/2content/agalat_tipulim.svg">
+        </div>
+      </div>
+
+      <!-- page 6 -->
+      <div id="r3p6" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">אוגדן חדר רופא</div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-1"></div>
+            <span>פק"ל לרופא, שבו יכתוב מפקד המתקן הרפואי את ההנחיות לרופא המטפל.</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-2"></div>
+            <span class="span-container">ההנחיות כוללות:
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>שעות פעילות.</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>נהלי קבלה.</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>סמכויות הרופא בחלוקת תרופות.</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>מתן אישורים רפואיים.</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>ימי מנוחה.</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>הגבלות בפעילות, לרבות מקרים המחייבים פינוי למלר"ד ומצבים המחייבים דיווח לגורמים שונים.</span>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 7 -->
+      <div id="r3p7" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">אוגדן חדר רופא</div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-1"></div>
+            <span>הוראת קבע לחובש חדר רופא (חובש / פקידה רפואית).</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-2"></div>
+            <span>נהלי רישום במערכת C.P.R (הנחיית מערכת CPR, נמצא בדף הבית של המערכת).</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-3"></div>
+            <span>נוהל הטיפול בחשיפה לדם (הנחיית ענף רפואה 01-02-05).</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-4"></div>
+            <span>נוהל ניקוי וחיטוי ספות בדיקה.</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-5"></div>
+            <span>נוהל המפרט את סמכויות הרופא המטפל - מתן ימי ג', פטורים, סמכויות למתן תרופות וכדומה (הוראות קרפ"ר 300.019, 300.007).</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 8 -->
+      <div id="r3p8" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">שילוט בחדר</div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-1"></div>
+            <span class="span-container">על יד דלת הרופא ייתלו:
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>שלט המציין את שם הרופא.</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>רשימת הפציינטים באותו יום לפי התור.</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>שלט שבו כתוב: "בעת ביצוע מסדר חולים או בדיקה הינך נדרש בנוכחות של חובש/ת או אדם נוסף בהתאם למינך. שימו לב - חיילת חייבת להיבדק בנוכחות חיילת אחרת אלא אם הינך מסרבת".</span>
+              </div>
+            </span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-2"></div>
+            <span>במידה שמאופסנות בחדר הרופא תרופות מעבר לתקן 15 (כגון תרופות רופאים מומחים) ייתלה שלט מעל מקום אחסון התרופות ובו רשום : "תרופות מעבר לתקן 15. לניפוק ע"י רופא מומחה ד"ר ______ בלבד".</span>
+          </div>
+        </div>
+      </div>
+
+       <!-- page 9- page 8's game -->
+       <div id="r3p9" class="page background">
+        <div class="container">
+          <div class="instructions-flex flex">
+            <img class="ahami-head" src="assets/media/2content/head_happy.svg">
+            <div class="bold instructions">רשמו את השם המלא של הד"ר על השלט של הדלת!</div>
+          </div>  
+          <input type="text" lang="he" class="doctor-name" name="name" placeholder="שם הרופא" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+        </div>
+      </div>
+
+      <!-- page 10 -->
+      <div id="r3p10" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">תיעוד</div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>כל מפגש של חייל הנבדק על ידי רופא, יתועד ביומן הרופא שנמצא במערכת הרפואית הממוחשבת CPR.<br>הפרטים שיוזנו הם החלטות הרופא, הפניות, מתן טיפול תרופתי והנחיות להמשך טיפול בהתאם לנהלי עבודה.</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-1"></div>
+            <span>במקרה של תקלה במערכת יש לתעד את המפגש על גבי טופס ייעודי להזנה (רטרו), ומיד עם חזרת המערכת יוזן המפגש בכללותו.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 11 -->
+      <div id="r3p11" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">תיעוד</div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span class="span-container">בכל חדר רופא יימצאו טפסי טיפול רפואיים למקרה בו נפלה מערכת ה-CPR, כמן כן רופא היחידה יכול לעבוד במודול של go CPR במקרה של נפילת מערכת. הטפסים אשר ימצאו בחדר רופא הם טפסים ייעודיים המוזמנים דרך נגד הלוגיסטיקה. רשימת הטפסים וסוגיהם: 
+              <div class="flex flex-text">
+                <div class="attach background data-num-1"></div>
+                <span>טופס 102 - מסדר חולים.</span>
+              </div>
+              <div class="flex flex-text">
+                <div class="attach background data-num-2"></div>
+                <span>טופס 222 - חייל נשוך.</span>
+              </div>
+              <div class="flex flex-text">
+                <div class="attach background data-num-3"></div>
+                <span>טופס 141 - דוח פציעה.</span>
+              </div>
+              <div class="flex flex-text">
+                <div class="attach background data-num-4"></div>
+                <span>טופס 1820 - פתק תרופה.</span>
+              </div>
+              <div class="flex flex-text">
+                <div class="attach background data-num-5"></div>
+                <span>טופס הזנה רטרו אקטיבי - ניתן להדפיס ממסך הפתיחה של מערכת ה-CPR.</span>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 12- page 11's game -->
+      <div id="r3p12" class="page background">
+        <div class="container">
+          <div class="instructions-flex flex">
+            <img class="ahami-head" src="assets/media/2content/head_happy.svg">
+            <div class="bold instructions">איזה טופס חסר? עברו בין הטפסים וגררו את הנכון למקום!</div>
+          </div>
+
+          <div class="drop drop-1"></div> 
+          <div id="carousel-1" class="carousel">  
+            <img class="carousel-item drag state form form_101 button visible" src="assets/media/exer14/exer14_101.svg">    
+            <img class="carousel-item drag state form form_141 button drag-1 hidden" src="assets/media/exer14/exer14_141.svg">    
+            <img class="carousel-item drag state form form_125 button hidden" src="assets/media/exer14/exer14_125.svg">    
+            <img class="carousel-item drag state form form_nohal button hidden" src="assets/media/exer14/exer14_nohal.svg">    
+            <img class="arrows arrow-left down button" src="assets/media/exer14/exer14_arrow.svg">
+            <img class="arrows arrow-right down button" src="assets/media/exer14/exer14_arrow.svg">
+          </div> 
+        </div>
+      </div>
+
+      <!-- page 13 -->
+      <div id="r3p13" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">מעקב חריגים וכרוניים</div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>הרופא המטפל אחראי לניהול המקרים הרפואיים החריגים והכרוניים בקרב מטופליו, ומפקד המרפאה אחראי על פיקוח ומעקב אחר כל המקרים החריגים במרפאתו.</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-1"></div>
+            <span>קלסר מעקב אחר כלל המקרים החריגים והכרוניים במרפאה ינוהל על ידי רופא היחידה על פי הנחיית ענף רפואה ובסיוע הצוות הרפואי. נתוני חיילים "חריגים" יילקחו ממערכת ה-CPR ונתוני חיילים כרוניים יילקחו ממערכת המח"ר (מערכת תחקור רפואי).</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>מפקד המרפאה אחראי להפיק דו"ח מצבים רפואיים חריגים ממערכת ה-CPR, אחת לחודש.</span>
+          </div>   <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>רופא היחידה יאשר בחתימתו כי ניהול המעקב אחר כלל המקרים הרפואיים  מתועד ברשומה הרפואית הממוחשבת.</span>
+          </div>   <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>תדירות ביצוע מפגש רפואי על ידי רופא/אחות/חובש למקרה חריג (גם ללא החייל המדובר) לא תפחת מפעם בחודש.</span>
+          </div>
+        </div>
+      </div>
+
+<!-- room 4 -->
+      <!-- page 1 -->
+      <div id="r4p1" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">תחזוקת החדר</div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>בחדר תרופות מנפקים תרופות מתקן 15 ו-15 ד' בלבד.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>אחריות רענון הצר"פ נמצאת תחת אחראי המרפאה, בהתאם לתוכנית הרענון שמפיק ענף צר"פ מידי שנה.</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-1"></div>
+            <span>חדר התרופות וניפוק התרופות יאורגן יאורגן על פי הנחיית ענף צר"פ (הנחייה מספר 02:04:0110).</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>חדר ניפוק תרופות יימצא נקי, יבש ומאוורר.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>בחדר יימצא אוגדן ניפוק תרופות.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 2- page 1's game -->
+      <div id="r4p2" class="page background">
+        <div class="container">
+          <div class="instructions-flex flex">
+            <img class="ahami-head" src="assets/media/2content/head_happy.svg">
+            <div class="bold instructions">תעשו טובה תדליקו מזגן</div>
+          </div>
+          <img id="switch" class="correct item button" src="assets/media/exer15/exer15_switch_off.svg">
+          <div id="wind" class="background"></div>
+        </div>
+      </div>
+
+      <!-- page 3 -->
+      <div id="r4p3" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">אוגדן ניפוק תרופות</div>
+          <div id="r4p3-text" class="flex flex-text">האוגדן יכלול את הנושאים הבאים:</div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-1"></div>
+            <span>הוראות קבע לאחראי אחסון וניפוק תרופות.</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-2"></div>
+            <span>נוהל אחסון תרופות בקירור ואופן ביצוע המעקב אחר תקינות המקרר (הנחיית ענף צר"פ מספר 02:01:0104).</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-3"></div>
+            <span>נוהל הוצאת צר"פ לשולחן טיפולים- לצורך בקרה ושליטה יש לנהל מחברת "הוצאה לשולחן טיפולים", אשר תרכז את סך כל הצר"פ והחומרים אשר הוצאו במשך השבוע לחדר הטיפולים או לחופ"ליות הפלוגות.</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-4"></div>
+            <span>בנושא סמים מסוכנים יש לפעול על פי הוראת קרפ"ר 901.003: "סמים מסוכנים ותרופות בפיקוח- שמירה ומעקב, ניפוק, צריכה והשמדה".</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-5"></div>
+            <span>אחראי המרפאה יחתים כל חובש ביחידתו על סוכריות אקטיק, על גבי טופס השאלה פנימית (טופס 1008 או חתימה דיגיטלית בפד). בעת יציאת חובשים לחופש/קורס, יחזירו את סוכריות האקטיק לאחראי המרפאה ויקבלו בתמורה את טופס ההשאלה עליו הם חתומים. בשובם מחופשתם יחזירו את הטופס ויקבלו את הסמים מחדש.</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-6"></div>
+            <span>על פי פקודת מטכ"ל 54.0302- "סמים מסוכנים ומתכות עדינות", סמים מסוכנים (לדוגמה אמפ' מורפין וסוכריות אקטיק) יאוחסנו בארון התרופות בנעילה כפולה.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>ההתייחסות לתרופות בפיקוח (לפי הגדרתם בהו"ק 901.000) תהיה זהה לסמים מסוכנים (נעילה כפולה). אך אם הן משמשות לכוננות מיידית (למשל תרופות בתרמילים ועגלות החייאה), אין צורך בנעילה.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 4 -->
+      <div id="r4p4" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">שילוט בחדר</div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-1"></div>
+            <span>שלט חדר ניפוק תרופות- <span class="bold gray">אסור</span> להשתמש במונח "בית מרקחת".</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-2"></div>
+            <span>על דלתות הארונות יימצאו שלטים של רשימת מורשיי ניפוק תרופות (רופא, פרמדיק, אח, חובש).</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-3"></div>
+            <span>בחדר התרופות תימצא רשימת דרכי תקשורת לבתי מרקחת צבאיים.</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-4"></div>
+            <span>שלט "אסור לעשן".</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-5"></div>
+            <span>ארונות התרופות ישולטו בהתאם לסוגי התרופות המאוחסנים בהם- תכשירים לשימוש פנימי/חיצוני/חבישה/שימוש פרנטראלי (הזרקה).</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>שלט "פג תוקף" באיזור אחסון מוצרים פגי תוקף.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 5- page 4's game -->
+      <div id="r4p5" class="page background">
+        <div class="container">
+          <div class="instructions-flex flex">
+            <img class="ahami-head" src="assets/media/2content/head_happy.svg">
+            <div class="bold instructions">גררו למקום כל שלט- אך האם לארון או לדלת?</div>
+          </div>
+          <div class="drop drop-1"></div>
+          <div class="drop drop-2"></div>
+          <img class="hands" src="assets/media/exer16/exer16_hands.svg">
+          <img class="data-num-1 drag-1 drag item state button none" src="assets/media/exer16/exer16_room.svg">
+          <img class="data-num-2 drag-1 drag item state button none" src="assets/media/exer16/exer16_smoke.svg">
+          <img class="data-num-3 drag-1 drag item state button none" src="assets/media/exer16/exer16_comms.svg">
+          <img class="data-num-4 drag-2 drag item state button block" src="assets/media/exer16/exer16_nipuk.svg">
+          <img class="data-num-5 drag-2 drag item state button none" src="assets/media/exer16/exer16_inner.svg">
+          <img class="data-num-6 drag-2 drag item state button none" src="assets/media/exer16/exer16_out.svg">
+          <img class="data-num-7 drag-2 drag item state button none" src="assets/media/exer16/exer16_bandage.svg">
+          <img class="data-num-8 drag-2 drag item state button none" src="assets/media/exer16/exer16_franteraly.svg">
+        </div>
+      </div>
+
+      <!-- page 6 -->
+      <div id="r4p6" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">ארונות התרופות</div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>התרופות יסווגו לכל ארון לפי שימוש פנימי/חיצוני/חבישה/פרנטראלי (הזרקה).</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-1"></div>
+            <span>התרופות שנמצאות בכל ארון יסודרו בקבוצות על פי צורת מתן (כמוסה, טבלייה, משחה וכיו"ב).</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-2"></div>
+            <span>תרופות בכל קבוצה יסודרו על פי סדר אותיות לועזי (ABC) של השם הגנרי של התרופה.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>ניפוק תרופות לחולה מארון תרופות יתבצע תמורת מרשם רפואי בלבד, תוך כדי הקפדה על כללי הניפוק הנכון (הסבר, חתימת המנפק, חתימת המטופל וניפוק עלון בעת הצורך).</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>מילוי מרשם הרפואה יתבצע על פי הנחיית ענף הרפואה (הנחייה מספר 01-01-17 "טופס 1820- מרשם רפואי".</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>חובה לצרף לכל תרופה המנופקת לחולה עלון לצרכן של היצרן, המאושר על ידי משרד הבריאות הישראלי.</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-1"></div>
+            <span>יש לנהל את הציוד והמעקב אחריו בהתאם לאגרת "אחזקת צר"פ בקירור" כפי שפורסם על ידי ענף צר"פ ורוקחות (הנחיה מספר 02:01:0104).</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 7 -->
+      <div id="r4p7" class="page background">
+        <div class="container">
+          <div class="instructions-flex flex">
+            <img class="ahami-head" src="assets/media/2content/head_happy.svg">
+            <div class="bold instructions">התרופות נופלות! כוונו אותן ימינה ושמאלה לפי הסוגים שלהן באמצעות המקלדת</div>
+          </div>
+          <img class="item data-num-1 block" src="assets/media/exer17/exer17_gauze.svg">
+          <img class="item data-num-2 none" src="assets/media/exer17/exer17_mofirosin.svg">
+          <img class="item data-num-3 none" src="assets/media/exer17/exer17_optalgin.svg">
+        </div>
+      </div>
+
+      <!-- page 8 -->
+      <div id="r4p8" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">מערכת תומ"ר</div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span class="span-container">בכל חדרי התרופות בצה"ל ישתמשו ב:
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>פורטל תומ"ר- מערכת שפותחה על ידי חיל הרפואה ומשמשת לניהול ניפוקי תרופות לחיילים ומבנים רפואיים. פורטל תומ"ר מתעד את פרטי התרופה שנופקה למטופל לרבות כמות, כחלק מהרשומה הרפואית וכנדרש בהתאם לחוק ביטוח בריאות ממלכתי.</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>מערכת ניהול המלאי הצה"לית (SAP)- מערכת ממוחשבת לניהול ובקרה של מלאי.</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>ממש"ק תומ"ר (SAP)- מערכת המקשרת בין מערכת התומ"ר למערכת לניהול מלאי. המערכת מאפשרת עדכון מלאי, צריכת תרופות אוטומטית במערכת לניהול מלאי (SAP) וכן עדכון מלאי זמין לניפוק בפורטל תומ"ר.</span>
+              </div>
+            </span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>על האחראי במקרפאה לוודא את התקנת המערכת, לתדרך את הצוות, לבצע בקרה על שימוש שוטף ותקין במערכת, ולתקן "שגויים" כל בוקר.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>מצגת הדרכה ניתן למצוא באתר מדור ביקורת חר"פ.</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- page 9 -->
+      <div id="r4p9" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">סמים ותרופות בפיקוח</div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>מקרב הקצינים בסגל חר"פ ימונו אחראי סמים ביחידה וקצין סופר סמים.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>ביחידות בהן <span class="bold gray">אין</span> קציני חר"פ ימונו קצינים אחרים לתפקידים האלו.</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-1"></div>
+            <span>ביחידות בהן יש צורך להשאיל סוכריות אקטיק לחובש יחיד או צוות רפואי, יוחתם השואל על טופס השאלה אפסנאי (טופס 1008/השאלה פנימית). האחראי לסמים ביחידה יפקח על השימוש במזרקים הללו, ויבדוק את הימצאותם ברשות החיילים שקיבלו אותם אחת ל-28 יום.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>ספירת מלאי הסמים והתרופות הפסיכותרפיות בכל יחידה יתבצע פעם ב-28 יום, על ידי קצין סופר הסמים היחידתי בליווי האחראי על הסמים ביחידה. דיווח על תוצאות הספירה והתאמתן למצאי במערכת ה-ERP יועבר למפקד היחידה ולקצין/נגד ביקורות רפואה של הרמה הממונה.</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-2"></div>
+            <span>לכל סם במרפאה יוכן חוצץ בקלסר סמים. בכל תחילת חוצץ ייופיע דף ערכות המתאר את הסמים בערכות השונות.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>סמים המופיעים במלאי חופשי (לא בערכות) לא יופיעו בדף הערכות.</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-3"></div>
+            <span>כל תנועה אפסנאית (ניפוק, קבלה, חיוב או צריכה) תעודכן בטבלה במחברת מעקב ותאושר באמצעות חתימת קצין סופר סמים.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 10 -->
+      <div id="r4p10" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">סמים ותרופות בפיקוח</div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-1"></div>
+            <span>בכל ניפוק וקבלה של סמים או תרופה בפיקוח ביחידה, שובר הצריכה/ניפוק (טופס 1027/1003) יוצמד למחברת מעקב, ויישמר במרפאה למשך 3 שנים בצמוד למחברת.</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-2"></div>
+            <span>אל השובר יש להצמיד את הצהרת הקר"פ (במקרה של ניפוק).</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 11- page 9 and 10's game -->
+      <div id="r4p11" class="page background">
+        <div class="container">
+          <div class="instructions-flex flex">
+            <img class="ahami-head" src="assets/media/2content/head_happy.svg">
+            <div class="bold instructions">לחצו על הטופס שלא אמור להיות בחדר תרופות!</div>
+          </div>
+          <img class="data-num-1 incorrect item state button" src="assets/media/exer18/exer18_ahrai.svg">
+          <img class="data-num-2 correct item state button visible" src="assets/media/exer18/exer18_retroactive.svg">
+          <img class="data-num-3 incorrect item state button" src="assets/media/exer18/exer18_drugs.svg">
+          <img class="data-num-4 incorrect item state button" src="assets/media/exer18/exer18_katzin.svg">
+          <img class="data-num-5 incorrect item state button" src="assets/media/exer18/exer18_morphine.svg">
+        </div>
+      </div>
+
+      <!-- page 12 -->
+      <div id="r4p12" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">שבר בסם/תרופה בפיקוח</div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-1"></div>
+            <span>את התרופה השבורה יש לשמור בצורה בטוחה שאינה מסכנת את צוות המרפאה עד לגמר תהליך הזיכוי הרשמי.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>אין צורך להביא את השבר של התרופה בפיקוח למר"צ לצורך זיכוי.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>יש לשמור תדפיס של שובר הצריכה מה-SAP ושל התחקיר בראשות סא"ל לתקופה של 3 שנים.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 13 -->
+      <div id="r4p13" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">אחזקת צר"פ פג תוקף</div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>בחדר יהיה מקום נפרד בו מאוחסנים פריטים פגי תוקף המיועדים להחזרה והשמדה ובו יימצא שלט "פגי תוקף".</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>תרופות אשר שינו את צבען, פג תאריך תורפן או קיים חשד לקלקולן, יימסרו לאפסנאות הרפואית בתיאום עם הקצר"פ בהקדם.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>במידה שהוארך תוקפה של תרופה מסויימת, יינתן אישור בכתב על ידי הקצר"פ, ויירשם התוקף החדש על גבי התרופה.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>אם לתרופה יש תוקף מרגע פתיחתה, יש לציין את תאריך הפתיחה על גביה.</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-1"></div>
+            <span>תנוהל מחברת מעקב אחר תקפות הצר"פ, שתרכז את כלל הצר"פ הנמצא ביחידה, לרבות חדר טיפולים, יחידות משנה, ארגזי חופ"ל וכדומה. המעקב יתנהל בטבלה- בעמודת השנה, תסומן שנת פגות התוקף.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 14- page 13's game -->
+      <div id="r4p14" class="page background">
+        <div class="container">
+          <div class="instructions-flex flex">
+            <img class="ahami-head" src="assets/media/2content/head_happy.svg">
+            <div class="bold instructions">מלאו את הטבלה לפני שפג זמנכם, והקישו ENTER כדי לבדוק את עצמכם</div>
+          </div>
+          <img id="moxipen-date" src="assets/media/exer19+20/moxipen_date.svg"> 
+          <div id="atzva">88913 אצווה</div>
+          <img id="moxipen-table" class="center" src="assets/media/exer19+20/exer19_table.svg">   
+          <div id="carousel-1" class="carousel">
+            <div class="carousel-item visible">טב' אסיוואל</div>    
+            <div class="carousel-item hidden correct">כמוסת מוקסיפן</div>    
+            <div class="carousel-item hidden">כמוסת אופטלגין</div>    
+            <div class="carousel-item hidden">תמיסת סביעור</div>
+            <img class="arrows arrow-right state button" src="assets/media/exer19+20/exer19_right.svg">   
+            <img class="arrows arrow-left state button" src="assets/media/exer19+20/exer19_left.svg">
+          </div>
+          <div id="carousel-2" class="carousel">
+            <div class="carousel-item visible">87914</div>    
+            <div class="carousel-item hidden">78923</div>    
+            <div class="carousel-item hidden correct">88913</div>    
+            <div class="carousel-item hidden">48912</div>
+            <img class="arrows arrow-right state button" src="assets/media/exer19+20/exer19_right.svg">   
+            <img class="arrows arrow-left state button" src="assets/media/exer19+20/exer19_left.svg">
+          </div>
+          <div id="carousel-3" class="carousel">
+            <div class="carousel-item visible correct">טבע</div>    
+            <div class="carousel-item hidden">קמהדע</div>    
+            <div class="carousel-item hidden">אוניפארם</div>    
+            <div class="carousel-item hidden">כצט</div>
+            <img class="arrows arrow-right state button" src="assets/media/exer19+20/exer19_right.svg">   
+            <img class="arrows arrow-left state button" src="assets/media/exer19+20/exer19_left.svg">
+          </div>
+          <div id="carousel-4" class="carousel">
+            <div class="carousel-item visible">מעבדה</div>    
+            <div class="carousel-item hidden">חדר רופא</div>    
+            <div class="carousel-item hidden correct">חדר תרופות</div>    
+            <div class="carousel-item hidden">חדר טיפולים</div>
+            <img class="arrows arrow-right state button" src="assets/media/exer19+20/exer19_right.svg">   
+            <img class="arrows arrow-left state button" src="assets/media/exer19+20/exer19_left.svg">
+          </div> 
+          <fieldset>
+            <input type="radio" name="radio-1" class="button" checked="true">
+            <input type="radio" name="radio-1" class="button">
+            <input type="radio" name="radio-1" class="button">
+            <input type="radio" name="radio-1" class="button correct">
+            <input type="radio" name="radio-1" class="button">
+          </fieldset>
+        </div>
+      </div>
+
+      <!-- page 15 -->
+      <div id="r4p15" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">אחזקת מכשור רפואי</div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-1"></div>
+            <span>מכשור רפואי יתוחזק על פי הוראת קרפ"ר 901.029 המגדירה שגרת טיפולים לכלל המכשור הרפואי (כולל עם סוללות) וכן על פי הוראות הנ"ר המתאימות המפורסמות מעת לעת.</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-2"></div>
+            <span>במתקנים רפואיים בהם קיימים גלילי גז דחוסים הם יטופלו על פי הוראות קרפ"ר 901.033, המגדירה שגרת טיפולים והוראות בטיחות, וכן על פי הוראות הנ"ר המתאימות.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>במתקנים רפואיים בהם קיים מכשור נייח- יש לוודא ביצוע תיקונים וטיפול שוטף על ידי טכנאי מוסמך של בימ"ל.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>יש להקפיד ולשמור את המכשור הרפואי נקי, תקין ומוכן לשימוש בכל עת.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>במידה והמכשור אינו תקין או שיש ספק לגבי כשירותו הטכנית מכל סיבה, יש לאסור את השימוש בו ולהעבירו לתיקון בדרגי התיקון המתאימים באופן מיידי.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>יש לנהל מחברת מעקב תקינות מכשור רפואי (בדומה למחברת מעקב פגי תוקף) ולנהלה בהתאם להוראת קרפ"ר 901.029 ולהנחיות הנ"ר. במחברת יעקבו אחר כלל המכשור הרפואי (כולל מכשור הנמצא בתוך ערכות במעמד סדיר, מעקב אחר טעינת סוללות לפי הוראות הנ"ר 1/004 ומעקב אחר בדיקת אוטוקלבים על ידי בודק מוסמך).</span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-3"></div>
+            <span>במחברת יפורטו תאריכי כיול של מכשירים מעודכנים, תאריך הבדיקה האחרונה, תאריך הבדיקה הבאה והמסמך הסידורי של המכשיר. המעקב ינוהל בחלוקה לחודשי השנה והדומה למעקב תקפות הציוד הרפואי.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 16 -->
+      <div id="r4p16" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">ניפוק תרופות מומחים</div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>רופאים מומחים הבודקים חיילים במרפאה הראשונית ואשר קיבלו אישור מענף הרפואה (בהתאם להוראה 06:04) רשאים לאחסן ולנפק תרופות מעבר לתקן 15 בהתאם לתחום מומחיותם.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>תרופות אלו יימצאו בחדר הרופא נעולות כאשר הניפוק יתבצע על ידי הרופא המומחה. על גב דלת הארון יימצא שלט:<br>"תרופות מעבר לתקן 15, לניפוק על ידי רופא מומחה ד"ר _______ בלבד".</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 17- page 16's game -->
+      <div id="r4p17" class="page background">
+        <div class="container">
+          <div class="instructions-flex flex">
+            <img class="ahami-head" src="assets/media/2content/head_happy.svg">
+            <div class="bold instructions">תנעל ת'ארון</div>
+          </div>
+          <img id="lock" src="assets/media/exer21/exer21_lock.svg">
+          <div class="drop drop-1"></div>
+          <img id="key" class="drag drag-1 item button" src="assets/media/exer21/exer21_key.svg">
+        </div>
+      </div>
+
+      <!-- page 18 -->
+      <div id="r4p18" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">אחסון תרופות בקירור</div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>יש לבצע את אחסון התרופות בקירור ואת המעקב אחר תקינות המקרר על פי תכנית רענון לצר"פ במרפאות צה"ל, המתפרסמת על ידי ענף צר"פ אחת לשניה.
+            </span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>תרופות המחויבות על פי הוראת היצרן להימצא בקירור יוחזקו בטמפרטורה 2-8 מעלות.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>אין להקפיא בשום אופן חיסונים או תרופות המאוחסנות בקירור.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>במידת האפשר יש להימנע מאחסון תכשירים במדף הצמוד למקפיא מחשש להקפאה.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>מקרר האחסון יעבור בדיקה של טכנאי מוסמך בכדי למנוע תקלות של עומס חשמל או  אי יכולת קירור תקינה. יש לתעד את הבדיקה בטופס ייעודי, המרכז חודש שלם על בסיס יומי. הטופס יישמר במרפאה למשך חודש נוסף לאחר סיום השימוש בו.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>טמפרטורת המקרר תיבדק בעזרת מדחום מינימום-מקסימום פעמיים ביום, בשעות 08:00-17:00.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>ביחידות בהן קיים מקרר חדש המבצע ניתור 24/7, יש לבצע בדיקה פעם אחת ביום בלבד בשעה 08:00.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 19- page 18's game -->
+      <div id="r4p19" class="page background">
+        <div class="container">
+          <div class="instructions-flex flex">
+            <img class="ahami-head" src="assets/media/2content/head_happy.svg">
+            <div class="bold instructions">המקרר השתגע!<br>הקישו ENTER כאשר המדחום מגיע לטמפרטורה הנכונה</div>
+          </div>
+          <img id="fridge" class="center" src="assets/media/exer22/exer22_fridge.svg">
+          <div class="slider-conteiner background flex">
+            <div class="slider"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 20 -->
+      <div id="r4p20" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">דיווח על תקלה בקירור</div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>העברת מלאי התכשירים במיידי למקרר תקין (כל מקרר שנמצא ביחידה).</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>סימון הפריטים בסימן ברור המורה על איסור שימוש.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span class="span-container">דיווח מיידי לקצין ברה"צ פיקוד/קצר"פ/ענף צר"פ שכולל:
+            <div class="flex flex-text">
+              <img class="asterix" src="assets/media/1home/asterisk.svg">
+              <span>מידע על הפריטים שנפגעו- הסוג, מספר האצווה, תאריך הייצור, כמויות.</span>
+            </div>
+            <div class="flex flex-text">
+              <img class="asterix" src="assets/media/1home/asterisk.svg">
+              <span>הטמפרטורה בה היו התכשירים (בהתאם למה שמופיע במדחום מינימום-מקסימום) ומשך האחסון של התכשירים שלא כנדרש.</span>
+            </div>
+          </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 21 -->
+      <div id="r4p21" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">גלילי גז רפואיים</div>
+          <div class="flex flex-text">
+            <div class="attach background data-num-1"></div>
+            <span>לאחר ביקורת ראשונית בעת קבלת הגלילים ליחידה, תבוצע ביקורת אחת לשבועיים שתתועד על גבי כרטיסייה ייעודית, ותכלול בדיקה חזותית ובדיקת לחץ. עבור גלילם בחירום הבדיקה תתבצע כל שנה וחצי.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>על הבלון יוטבע ויסומן תאריך הבדיקה ההידרוסטטית של הבלון- יש למל\א תאריך זה בתחילת כל כרטיסייה.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>תוקף הבדיקה ההידרוסטטית הינו 4.5 שנים מהתאריך המוטבע.</span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span class="span-container">מיכל יפפסל לאחסנה במקרים הבאים:
+            <div class="flex flex-text">
+              <img class="asterix" src="assets/media/1home/asterisk.svg">
+              <span>אם בבלונים לאחר מילוי יש חריגה ביותר מ-20 אטמוספרות מהמוצהר.</span>
+            </div>
+            <div class="flex flex-text">
+              <img class="asterix" src="assets/media/1home/asterisk.svg">
+              <span>אם בבלונים קטנים בשימוש שוטף יש חריגה מתחת ל-150 אטמוספרות (2200 PSI).</span>
+            </div>
+          </span>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span>ביצוע הבדיקה נמצא באחריות כל יחידה מאחסנת, ובעלי התפקיד שיכולים לבצע אותה הם: טכנאי, מפ"ט שהוסמך על ידי מקרפ"ר, רע"ן הנ"ר, רופא, פארמדיק, חובש ואחות.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- questions -->
+      <div id="q1" class="page background notebook">
+        <div class="container">
+          <div class="questions bold">שאלה</div>
+          <div class="flex answers-flex">
+            <div class="answer data-num-1 background normal button">תשובה 1</div>
+            <div class="answer data-num-2 background normal button">תשובה 2</div>
+            <div class="answer data-num-3 background normal button">תשובה 3</div>
+            <div class="answer data-num-4 background normal button">תשובה 4</div>
+          </div>
+          <div class="question-counter background bold little-title">1/6</div>
+          <div class="quiz-type bold"></div>
+        </div>
+      </div> 
+
+      <div id="q2" class="page background notebook">
+        <div class="container">
+          <div class="questions bold">שאלה</div>
+          <div class="flex answers-flex">
+            <div class="answer data-num-1 background normal button">תשובה 1</div>
+            <div class="answer data-num-2 background normal button">תשובה 2</div>
+            <div class="answer data-num-3 background normal button">תשובה 3</div>
+            <div class="answer data-num-4 background normal button">תשובה 4</div>
+          </div>
+          <div class="question-counter background bold little-title">2/6</div>
+          <div class="quiz-type bold"></div>
+        </div>
+      </div> 
+
+      <div id="q3" class="page background notebook">
+        <div class="container">
+          <div class="questions bold">שאלה</div>
+          <div class="flex answers-flex">
+            <div class="answer data-num-1 background normal button">תשובה 1</div>
+            <div class="answer data-num-2 background normal button">תשובה 2</div>
+            <div class="answer data-num-3 background normal button">תשובה 3</div>
+            <div class="answer data-num-4 background normal button">תשובה 4</div>
+          </div>
+          <div class="question-counter background bold little-title">3/6</div>
+          <div class="quiz-type bold"></div>
+        </div>
+      </div> 
+
+      <div id="q4" class="page background notebook">
+        <div class="container">
+          <div class="questions bold">שאלה</div>
+          <div class="flex answers-flex">
+            <div class="answer data-num-1 background normal button">תשובה 1</div>
+            <div class="answer data-num-2 background normal button">תשובה 2</div>
+            <div class="answer data-num-3 background normal button">תשובה 3</div>
+            <div class="answer data-num-4 background normal button">תשובה 4</div>
+          </div>
+          <div class="question-counter background bold little-title">4/6</div>
+          <div class="quiz-type bold"></div>
+        </div>
+      </div> 
+
+      <div id="q5" class="page background notebook">
+        <div class="container">
+          <div class="questions bold">שאלה</div>
+          <div class="flex answers-flex">
+            <div class="answer data-num-1 background normal button">תשובה 1</div>
+            <div class="answer data-num-2 background normal button">תשובה 2</div>
+            <div class="answer data-num-3 background normal button">תשובה 3</div>
+            <div class="answer data-num-4 background normal button">תשובה 4</div>
+          </div>
+          <div class="question-counter background bold little-title">5/6</div>
+          <div class="quiz-type bold"></div>
+        </div>
+      </div> 
+
+      <div id="q6" class="page background notebook">
+        <div class="container">
+          <div class="questions bold">שאלה</div>
+          <div class="flex answers-flex">
+            <div class="answer data-num-1 background normal button">תשובה 1</div>
+            <div class="answer data-num-2 background normal button">תשובה 2</div>
+            <div class="answer data-num-3 background normal button">תשובה 3</div>
+            <div class="answer data-num-4 background normal button">תשובה 4</div>
+          </div>
+          <div class="question-counter background bold little-title">6/6</div>
+          <div class="quiz-type bold"></div>
+        </div>
+      </div>
+
+      <!-- rooms -->
+      <div id="back-room-button" class="button watch-room-button control-button background none"></div>
+      <div id="room-1" class="page screen background"></div>
+      <div id="room-2" class="page screen background"></div>
+      <div id="room-3" class="page screen background"></div>
+      <div id="room-4" class="page screen background"></div>
+  
+      <!-- games-general -->
+      <div id="spinning-flex" class="page none">
+        <div class="vertical">
+          <img id="spinning-bg" src="assets/media/heart/round_lights.svg">
+        </div>
+     </div>
+
+     <img id="keyboard" class="none center" src="assets/media/exer5/keyboard_normal.svg">
+
+      <!-- ending game -->
+      <div id="ending-game" class="page screen background">
+        <div class="container">
+          <div class="bold smooth-16 ending-game-title">feedback</div>
+        </div>
+      </div>
+
+      <!-- ending room -->
+      <div id="ending-room" class="page screen background">
+        <div class="container">
+          <div class="bold smooth-16 ending-room-title">ציון: </div>
+          <img id="room-item" src="assets/media/room_finish/finish_room_1.svg">
+        </div>
+      </div>
+
+      <!-- finish story -->
+      <div id="finish-story" class="page screen background">
+        <div class="container">
+          <div class="bold smooth-16 ending-game-title">נגמר הסיפור</div>
+          <div class="button-flex flex">
+            <div id="quiz-button" class="button background"></div>
+            <div id="restart-button" class="button background"></div>
+          </div>
+          <img id="ahami-cry" src="assets/media/gameover+finish/ahami_sad.svg">
+        </div>
+      </div>
+
+      <!-- ending the whole lomda -->
+      <div id="ending-lomda" class="page screen background">
+        <div class="container">
+          <div class="bold smooth-16 ending-game-title">כל הכבוד</div>
+          <div class="flex grade-flex center">
+            <div class="flex">
+              <div class="bold">ציונך הכולל:</div>
+              <div id="total-score" class="bold smooth-16 ending-game-title">95</div>
+            </div>
+            <div class="flex">
+              <div class="flex grade">
+                <span class="bold gray">חדר קבלה:</span>
+                <span id="grade-1" class="bold">95</span>
+              </div>
+              <div class="flex grade">
+                <span class="bold gray">חדר טיפולים:</span>
+                <span id="grade-2" class="bold">95</span>
+              </div>
+              <div class="flex grade">
+                <span class="bold gray">חדר רופא:</span>
+                <span id="grade-3" class="bold">95</span>
+              </div>
+              <div class="flex grade">
+                <span class="bold gray">חדר תרופות:</span>
+                <span id="grade-4" class="bold">100</span>
+              </div>
+            </div>
+          </div>
+          <div id="home-button" class="home-page-button button background"></div>
+        </div>
+      </div>
+
+      <!-- hearts -->
+      <div id="hearts-flex" class="none center">
+        <div id="heart-3" class="cloud-flex visible">
+          <img class="heart" src="assets/media/heart/heart3_happy.svg">
+          <img class="cloud none center" src="assets/media/cloud-right/cloud_6.svg">
+        </div>
+        <div id="heart-2" class="cloud-flex visible">
+          <img class="heart" src="assets/media/heart/heart2_happy.svg">
+          <img class="cloud none center" src="assets/media/cloud-right/cloud_6.svg">
+        </div>
+        <div id="heart-1" class="cloud-flex visible">
+          <img class="heart" src="assets/media/heart/heart1_happy.svg">
+          <img class="cloud none center" src="assets/media/cloud-right/cloud_6.svg">
+        </div>
+      </div>
+
+      <div id="black-div" class="page background">
+        <div id="scroll-back-button" class="button back-button control-button background"></div>
+        <div id="scroll-div" class="background flex center">
+        </div>
+      </div>
+ 
+      <!-- controls -->
+      <div id="controls" class="none">
+        <div class="button home-page-button control-button background visible"></div>
+        <div id="watch-room-button" class="button watch-room-button control-button background visible"></div>
+        <div id="back-button" class="button move back-button control-button background hidden"></div>
+        <div id="next-button" class="button move control-button background visible"></div>
+        <div id="lesson-map-1" class="flex background lesson-map none visible">
+          <div class="topic-1 topic background">
+            <div class="tooltip">תחזוקת החדר</div>
+          </div>
+          <div class="topic-2 topic background">
+            <div class="tooltip">שילוט בחדר</div>
+          </div>
+          <div class="topic-3 topic background">
+            <div class="tooltip">מידע למטופל</div>
+          </div>
+          <div class="topic-4 topic background">
+            <div class="tooltip">חדר קבלה</div>
+          </div>
+        </div>
+        <div id="lesson-map-2" class="flex background lesson-map none visible">
+          <div class="topic-1 topic background">
+            <div class="tooltip">הרגלי עבודה</div>
+          </div>
+          <div class="topic-2 topic background">
+            <div class="tooltip">תחזוקת החדר</div>
+          </div>
+          <div class="topic-3 topic background">
+            <div class="tooltip">אוגדן</div>
+          </div>
+          <div class="topic-4 topic background">
+            <div class="tooltip">רשימות</div>
+          </div>
+          <div class="topic-5 topic background">
+            <div class="tooltip">שילוט</div>
+          </div>
+          <div class="topic-6 topic background">
+            <div class="tooltip">אפוד</div>
+          </div>
+          <div class="topic-7 topic background">
+            <div class="tooltip">דפיברילטור</div>
+          </div>
+          <div class="topic-8 topic background">
+            <div class="tooltip">דגימות מעבדה</div>
+          </div>
+          <div class="topic-9 topic background">
+            <div class="tooltip">שולחן טיפולים</div>
+          </div>
+          <div class="topic-10 topic background">
+            <div class="tooltip">הנחיות לשולחן טיפולים</div>
+          </div>
+          <div class="topic-11 topic background">
+            <div class="tooltip">שילוט בשולחן טיפולים</div>
+          </div>
+        </div>
+        <div id="lesson-map-3" class="flex background lesson-map none visible">
+          <div class="topic-1 topic background">
+            <div class="tooltip">הרגלי עבודה</div>
+          </div>
+          <div class="topic-2 topic background">
+            <div class="tooltip">תחזוקת החדר</div>
+          </div>
+          <div class="topic-3 topic background">
+            <div class="tooltip">עגלת טיפולים</div>
+          </div>
+          <div class="topic-4 topic background">
+            <div class="tooltip">אוגדן</div>
+          </div>
+          <div class="topic-5 topic background">
+            <div class="tooltip">שילוט</div>
+          </div>
+          <div class="topic-6 topic background">
+            <div class="tooltip">תיעוד</div>
+          </div>
+          <div class="topic-7 topic background">
+            <div class="tooltip">מעקב חריגים וכרוניים</div>
+          </div>
+        </div>
+        <div id="lesson-map-4" class="flex background lesson-map none visible">
+          <div class="topic-1 topic background">
+            <div class="tooltip">תחזוקת החדר</div>
+          </div>
+          <div class="topic-2 topic background">
+            <div class="tooltip">אוגדן</div>
+          </div>
+          <div class="topic-3 topic background">
+            <div class="tooltip">שילוט</div>
+          </div>
+          <div class="topic-4 topic background">
+            <div class="tooltip">ארון תרופות</div>
+          </div>
+          <div class="topic-5 topic background">
+            <div class="tooltip">מערכת תומ"ר</div>
+          </div>
+          <div class="topic-6 topic background">
+            <div class="tooltip">סמים ותרופות בפיקוח</div>
+          </div>
+          <div class="topic-7 topic background">
+            <div class="tooltip">שבר בתרופה</div>
+          </div>
+          <div class="topic-8 topic background">
+            <div class="tooltip">צר"פ פג תוקף</div>
+          </div>
+          <div class="topic-9 topic background">
+            <div class="tooltip">מכשור רפואי</div>
+          </div>
+          <div class="topic-10 topic background">
+            <div class="tooltip">מומחים</div>
+          </div>
+          <div class="topic-11 topic background">
+            <div class="tooltip">אחסון בקירור</div>
+          </div>
+          <div class="topic-12 topic background">
+            <div class="tooltip">תקלה בקירור</div>
+          </div>
+          <div class="topic-13 topic background">
+            <div class="tooltip">גלילי גז</div>
+          </div>
+        </div>
+        <img id="topic-counter" class="visible" src="assets/media/2content/head_happy.svg">
+      </div>
+    
+    <!-- timer -->
+    <div id="timer" class="none">
+      <div id="timer-bar">
+        <img id="time-timeline" src="assets/media/3exers_general/time_bar.svg">
+      </div>
+      <img id="clock" src="assets/media/3exers_general/clock_cut.svg">
+    </div>
+
+    <!-- v and x after game -->
+    <img id="v" class="v-x none center" src="assets/media/3exers_general/finish_right.svg">
+    <img id="x" class="v-x none center" src="assets/media/3exers_general/finish_wrong.svg">
+  </div>
+  </body>
+</html>
